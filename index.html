@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>PhotoFolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/20b7b1ace1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .after::after
+        {
+            position: absolute;
+            content: '';
+            height: 40%;
+            width: 100%;
+            bottom: 5px;
+            left: 0;
+            background: #27A776;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- NavBar Section Starting Here -->
+    <nav class="h-28 grid grid-cols-3 sticky top-0">
+        <div class=" flex ps-3 pt-4 items-center">
+            <i class="fa-solid fa-camera text-[#27A776] text-3xl me-3"></i>
+            <h1 class="text-white text-3xl">PhotoFolio</h1>
+        </div>
+        <div>
+            <ul class="w-full flex justify-around items-center h-full text-[#999] uppercase text-sm">
+                <li class="duration-75 hover:text-white cursor-pointer text-white duration-75">home</li>
+                <li class="duration-75 hover:text-white cursor-pointer duration-75 font-medium">about</li>
+                <li class="duration-75 hover:text-white cursor-pointer duration-75 font-medium">gallery</li>
+                <li class="duration-75 hover:text-white cursor-pointer duration-75 font-medium">services</li>
+                <li class="duration-75 hover:text-white cursor-pointer duration-75 font-medium">contact</li>
+            </ul>
+        </div>
+        <div class=" flex justify-end pe-5 gap-4 items-center text-lg">
+            <i class="fa-brands fa-twitter text-[#999] cursor-pointer hover:text-white"></i>
+            <i class="fa-brands fa-facebook text-[#999] cursor-pointer hover:text-white"></i>
+            <i class="fa-brands fa-instagram text-[#999] cursor-pointer hover:text-white"></i>
+            <i class="fa-brands fa-linkedin text-[#999] cursor-pointer hover:text-white"></i>
+        </div>
+    </nav>
+    <!-- NavBar Section End Here -->
+
+    <!-- HomePage Section Starting Here -->
+    <div class="container-fluid h-96 flex justify-center items-center flex-col gap-y-4">
+        <h1 class="text-white text-center text-4xl scale-125 w-[30%] font-serif">I'm <span class="after relative inline-block px-2">Jenny Wilson</span> a Professional Photographer
+            from New York City</h1>
+        <p class="text-[#999] text-center w-1/2 text-xl">Blanditiis praesentium aliquam illum tempore incidunt debitis
+            dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
+        <button class="text-white bg-[#27A776] py-3 px-7 rounded">AVAILABLE FOR HIRE</button>
+    </div>
+    <!-- HomePage Section End Here -->
+
+    <!-- Cards Section Starting Here -->
+    <div class="grid grid-cols-4 grid-rows-4 gap-6 px-3 py-5 border-y border-[#999]">
+        <div class=" rounded-xl h-64 overflow-hidden">
+
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible"></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-2.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-2.jpg')] hover:pt-0 group ">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>  
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-3.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-3.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-4.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-4.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-5.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-5.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-6.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-6.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-7.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-7.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-8.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-8.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-9.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-9.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-10.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-10.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-11.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-11.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-12.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-12.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-13.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-13.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-14.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-14.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-15.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-15.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+        <div class=" rounded-xl h-64 overflow-hidden">
+            <div
+                class="pt-20 gap-4 flex justify-center items-center bg-cover h-full w-full bg-[url('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-16.jpg')] duration-75 hover:scale-110 hover:duration-75 hover:bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)] hover:bg-[rl('https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-16.jpg')] hover:pt-0 group">
+                <i class="fa-solid fa-angles-left text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+                <i class="fa-solid fa-link text-xl invisible text-[#999] hover:text-white group-hover:visible "></i>
+            </div>
+        </div>
+    </div>
+    <!-- Cards Section End Here -->
+
+    <!-- Footer Section Starting Here -->
+    <footer class="h-28 flex justify-center items-center">
+        <h4 class="text-white text-center  w-1/4 text-sm">© Copyright PhotoFolio. All Rights Reserved
+            Designed by <span class="text-[#27A776] cursor-pointer">BootstrapMade</span></h4>
+    </footer>
+    <!-- Footer Section End Here -->
+</body>
+
+</html>
